@@ -20,19 +20,11 @@ __pycache__/
 
 **.version
 
-# Weight files
-*.weights
-*.hdf5
-*.h5
-
-*.caffemodel
-*.prototxt
-
 # pytest
 .pytest_cache
-
 
 # generated
 *.tar.gz
 *.db
+*.log
 

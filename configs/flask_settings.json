@@ -1,4 +1,5 @@
 { 
     "SECRET_KEY" : "secret_key",
-    "DEBUG" : true
+    "DEBUG" : true,
+    "ENV": "production"
 }
