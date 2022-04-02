@@ -1,0 +1,5 @@
+{
+    "LOG_LEVEL":"DEBUG",
+    "HOST":"localhost",
+    "APP_PORT":"6000"
+}
