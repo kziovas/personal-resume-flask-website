@@ -10,12 +10,13 @@ def create_app():
     app = resume_app.configure_app()
     app.config["JSONIFY_PRETTYPRINT_REGULAR"] = False
 
-    app.run(
-        host=resume_app.config_service.host, port=resume_app.config_service.app_port
-    )
+    # app.run(
+    #     host=resume_app.config_service.host, port=resume_app.config_service.app_port
+    # )
 
     return app
 
 
 if __name__ == "__main__":
     app = create_app()
+    app.run()
