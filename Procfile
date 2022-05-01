@@ -1,0 +1,1 @@
+web:gunicorn app:resume_app
