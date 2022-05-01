@@ -7,7 +7,6 @@ from views import home_bp, about_bp
 from shared import APP_NAME
 
 
-
 @singleton
 class ResumeApp:
     @inject
@@ -19,7 +18,7 @@ class ResumeApp:
         self.logger = logger
         self.config_service = config_service
 
-    def create_app(self, name: str = APP_NAME):
+    def configure_app(self, name: str = APP_NAME):
         app = Flask(name)
         try:
             self.config_service.load()
@@ -32,7 +31,6 @@ class ResumeApp:
             settings = json.load(f)
 
         app.config.update(settings)
-
 
         # Initiliaze configuration and URL rules for all views
 
