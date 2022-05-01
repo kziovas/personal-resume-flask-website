@@ -3,7 +3,7 @@ from flask import Flask
 from logging import Logger
 from injector import inject, singleton
 from core import ConfigService
-from api import home_bp
+from views import home_bp, about_bp
 from shared import APP_NAME
 
 
@@ -38,5 +38,6 @@ class ResumeApp:
 
         # Register blueprints
         app.register_blueprint(home_bp)
+        app.register_blueprint(about_bp)
 
         return app

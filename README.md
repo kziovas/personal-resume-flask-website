@@ -1,2 +1,2 @@
 # personal-resume-flask-website
-A personal resume website build with Flask and Jinja. Various other tools were used and are listed in below.
+A personal resume website build with Flask and Jinja. All other tools used are also listed below.
