@@ -1,2 +1,5 @@
 APP_NAME = "resume_app"
 LOG_LEVEL = "LOG_LEVEL"
+CONFIG_FOLDER_NAME = "configs"
+CONFIG_FILE_NAME = "config.json"
+FLASK_SETTINGS_FILE_NAME = "flask_settings.json"
