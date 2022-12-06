@@ -18,9 +18,9 @@ class CoreModule(Module):
 
         # Create handlers
         stream_handler = logging.StreamHandler()
-        file_handler = logging.FileHandler(f"{APP_NAME}.log")
+        # file_handler = logging.FileHandler(f"{APP_NAME}.log")
         stream_handler.setLevel(log_level)
-        file_handler.setLevel(log_level)
+        # file_handler.setLevel(log_level)
 
         # Create formatters and add it to handlers
         stream_format = logging.Formatter("%(name)s - %(levelname)s - %(message)s")
@@ -28,10 +28,10 @@ class CoreModule(Module):
             "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
         )
         stream_handler.setFormatter(stream_format)
-        file_handler.setFormatter(file_format)
+        # file_handler.setFormatter(file_format)
 
         # Add handlers to the logger
         logger.addHandler(stream_handler)
-        logger.addHandler(file_handler)
+        # logger.addHandler(file_handler)
 
         return logger
