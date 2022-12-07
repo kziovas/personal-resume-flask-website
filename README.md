@@ -9,4 +9,6 @@ A personal resume website build with Flask and Jinja. All other tools used are l
 ## Version Control
 - Git/Github
 ## Deployment
-- Heroku
+- ~~Heroku~~ 
+- Deta *Note*: Since Heroku removed free hosting tier moved to [Deta](https://www.deta.sh/).
+It is a **for ever** free host ideal for small projects.
